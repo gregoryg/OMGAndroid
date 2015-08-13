@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">OMG Android</string>
 
-    <string name="hello_world">Would all great Netpune\'s Ocean wash this blood clean from my hands?\n\nNay, these my hands would rather the multitudinous seas incarnadine!</string>
+    <string name="textview">Would all great Netpune\'s Ocean wash this blood clean from my hands?\n\nNay, these my hands would rather the multitudinous seas incarnadine!</string>
     <string name="action_settings">Settings</string>
+    <string name="button">Update the TextView</string>
+    <string name="hint">A hinty name"</string>
 </resources>
