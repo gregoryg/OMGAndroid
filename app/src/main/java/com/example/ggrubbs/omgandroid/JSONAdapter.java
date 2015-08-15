@@ -1,6 +1,8 @@
 package com.example.ggrubbs.omgandroid;
 
 import android.content.Context;
+import android.
+    util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -93,13 +95,15 @@ public class JSONAdapter extends BaseAdapter {
 	String authorName = "";
 	if (jsonObject.has("title")) {
 	    bookTitle = jsonObject.optString("title");
+		Log.d("omg android", "Found title: " + bookTitle );
 	}
 	if (jsonObject.has("author_name")) {
 	    authorName = jsonObject.optJSONArray("author_name").optString(0);
+		Log.d("omg android", "Found author: " + authorName);
 	}
 	// Send these strings to the TextViews for display
 	holder.titleTextView.setText(bookTitle);
-	holder.titleTextView.setText(authorName);
+	holder.authorTextView.setText(authorName);
 	    
 	return convertView;
     }
